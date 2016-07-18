@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chatting Webpage</title>
+
+    <!-- normalize.css and modernizr.js help with browser compatibility -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!--    <script src="js/vendor/modernizr.js"></script>-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                var message = $("textarea").val();
+                var old = $("#content").html();
+
+                $("#content").html(old + "<p>" + message + "</p>");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <section id="section">
+        <div class="row head">
+            <div class="small-8 small-centered h1">
+                <h1 class="small-offset-1 " id="font">TALK...If you dare</h1>
+            </div>
+        </div>
+
+        <div class="row" ;>
+
+            <div class="small-8 small-centered content" style="background-color:darkgrey">
+                <div id="content">
+                    <p id="font">This is where all the threats go!!!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="small-8 small-centered type">
+                <div id="message">
+                    <textarea id="font">Input your death message here...</textarea>
+                    <button class="btn">Submit</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+   
+<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA7YW666lGKzMSzgg_47z4WkJPAzxhYlmQ",
+    authDomain: "chat-trap.firebaseapp.com",
+    databaseURL: "https://chat-trap.firebaseio.com",
+    storageBucket: "chat-trap.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+    
+</body>
+
+</html>

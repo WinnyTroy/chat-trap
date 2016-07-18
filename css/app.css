@@ -1,0 +1,76 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+#font {
+    font-family: 'Indie Flower', cursive;
+   
+}
+form {
+    margin-left: 900px;
+    background-color: greenyellow;
+    height: 750px;
+    width: 450px;
+    align-content: center;
+}
+body {
+    background-image: url(../img/right.png);
+    background-size: cover;
+}
+#first {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#second {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+#third {
+    margin-left: 45px;
+    margin-top: 20px;
+}
+content {
+    border: 1px solid #A9F5A9;
+    background: yellowgreen;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    overflow: auto;
+}
+#content p {
+    padding: 1em;
+    margin: 1em;
+    background: yellowgreen;
+    overflow: auto;
+    height: 150px;
+}
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 31px;
+}
+#message {
+    margin-top: 0px;
+    overflow: auto;
+    padding: 0 0 0 3px;
+    color: floralwhite;
+}
+#message button {
+    margin: 1em 0 0 0;
+}
+#message textarea {
+    border: none;
+    padding: 6px;
+    text-decoration: none;
+    background: yellowgreen;
+}
+button {
+    border: none;
+    padding: 6px;
+    text-decoration: none;
+    -moz-border-radius: 4px;
+    background: #2EFE64;
+    color: floralwhite;
+    cursor: pointer;
+}
+#section {
+    margin-left: 800px;
+}
